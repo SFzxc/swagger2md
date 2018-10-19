@@ -1,4 +1,4 @@
-# Swagger2md [![Gem Version](https://badge.fury.io/rb/swagger2md)](https://badge.fury.io/rb/swagger2md) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+# Swagger2md [![Gem Version](https://badge.fury.io/rb/bitcoinrb.svg)](https://badge.fury.io/rb/swagger2md) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 Generate API docs from Swagger file into markdown file.
 
