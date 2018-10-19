@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'optionparser'
+require 'swagger2md/converter'
+require 'swagger2md/utils'
+
+options = {}
+
+OptionParser.new do |parser|
+  parser.on("-i", "--input INPUT", String, 'Specific swagger file path') do |input|
+  	options[:input] = input
+  end
+  parser.on("-o", "--output [OUTPUT]", String, 'Specific output file name') do |output|
+  	options[:output] = output
+  end
+end.parse!
+
+if options[:input]
+	Swagger2md::Converter.to_markdown(options[:input])
+end
