@@ -4,17 +4,7 @@ Generate API docs from Swagger file into markdown file.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'swagger2md'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install swagger2md
 
