@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ swagger2md --help
+
+Usage: swagger2md [options]
+    -i, --input INPUT                Specific swagger file path
+    -o, --output [OUTPUT]            Specific output file name [Option]
+```
+
+```
+$ swagger2md -i swagger.json -o docs.md
+```
 
 ## Development
 
