@@ -1,9 +1,10 @@
 require 'json'
+require 'pry'
 
 module Swagger2md
   module Converter
-    def self.to_markdown file_path
-      docs_file = File.read(file_path)
+    def self.to_markdown input_path, output_path
+      docs_file = File.read(input_path)
       docs_hash = JSON.parse(docs_file)
       content = "#{docs_hash['info']['title']}\n"\
                 "======\n"\
@@ -32,10 +33,10 @@ module Swagger2md
           end
         end
       end
-      export(content)
+      export(content, output_path)
     end
 
-    def self.export(content, output='docs.md')
+    def self.export(content, output)
       File.open(output, 'w') do |file|
         file.write(content)
       end

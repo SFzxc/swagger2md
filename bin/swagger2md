@@ -16,5 +16,5 @@ OptionParser.new do |parser|
 end.parse!
 
 if options[:input]
-  Swagger2md::Converter.to_markdown(options[:input])
+  Swagger2md::Converter.to_markdown(options[:input], options[:output] || 'docs.md')
 end
